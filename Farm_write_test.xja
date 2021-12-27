@@ -1,0 +1,189 @@
+<version>1</version>
+<object type = 'job'>
+	<id>1</id>
+	<pid>-1</pid>
+	<priority>9999</priority>
+	<local_order>0</local_order>
+	<global_order>0</global_order>
+	<pgrp>0</pgrp>
+	<user></user>
+	<domain></domain>
+	<password></password>
+	<status>
+		<object type = 'status'>
+			<value>0</value>
+		</object>
+	</status>
+	<subjobs>
+		<object type = 'subjob_list'>
+		</object>
+	</subjobs>
+	<name>Farm test (file write) Job</name>
+	<cpus>1</cpus>
+	<todo>0</todo>
+	<cluster></cluster>
+	<children>
+		<object type = 'job_list'>
+		</object>
+	</children>
+	<agenda>
+		<object type = 'work_list'>
+		</object>
+	</agenda>
+	<callbacks>
+		<object type = 'callback_list'>
+		</object>
+	</callbacks>
+	<requirements></requirements>
+	<reservations></reservations>
+	<restrictions></restrictions>
+	<groups></groups>
+	<hosts></hosts>
+	<host_order></host_order>
+	<data>(=(cmdTemplate=Hostname &gt;&gt; &quot;%\(file\)s&quot;
+echo &quot;THIS FILE IS WRITABLE.&quot; &gt;&gt; &quot;%\(file\)s&quot;)(file=change_me)(rangeExecution=individual)(simpleCmdType=Qube Test \(file write\)))</data>
+	<queue></queue>
+	<prototype>cmdline</prototype>
+	<path></path>
+	<reason></reason>
+	<logpath></logpath>
+	<cpus_tally>
+		<object type = 'status_tally'>
+			<running>0</running>
+			<blocked>0</blocked>
+			<complete>0</complete>
+			<pending>0</pending>
+			<suspended>0</suspended>
+			<failed>0</failed>
+			<killed>0</killed>
+			<waiting>0</waiting>
+			<unknown>0</unknown>
+			<warning>0</warning>
+			<badlogin>0</badlogin>
+		</object>
+	</cpus_tally>
+	<todo_tally>
+		<object type = 'status_tally'>
+			<running>0</running>
+			<blocked>0</blocked>
+			<complete>0</complete>
+			<pending>0</pending>
+			<suspended>0</suspended>
+			<failed>0</failed>
+			<killed>0</killed>
+			<waiting>0</waiting>
+			<unknown>0</unknown>
+			<warning>0</warning>
+			<badlogin>0</badlogin>
+		</object>
+	</todo_tally>
+	<time_submit>
+		<object type = 'time'>
+			<value>0</value>
+		</object>
+	</time_submit>
+	<time_start>
+		<object type = 'time'>
+			<value>0</value>
+		</object>
+	</time_start>
+	<time_complete>
+		<object type = 'time'>
+			<value>0</value>
+		</object>
+	</time_complete>
+	<flags>288</flags>
+	<label></label>
+	<account></account>
+	<env>
+		<object type = 'env'>
+			<keys>
+				<object type = 'string_list'>
+				</object>
+			</keys>
+			<values>
+				<object type = 'string_list'>
+				</object>
+			</values>
+			<umask>0</umask>
+			<cwd></cwd>
+			<mounts>
+				<object type = 'string_hash'>
+				</object>
+			</mounts>
+		</object>
+	</env>
+	<kind></kind>
+	<server_id>4</server_id>
+	<last_update>
+		<object type = 'time'>
+			<value>0</value>
+		</object>
+	</last_update>
+	<timeout>-1</timeout>
+	<variables>
+		<object type = 'variable_list'>
+		</object>
+	</variables>
+	<agenda_status>
+		<object type = 'status'>
+			<value>0</value>
+		</object>
+	</agenda_status>
+	<subjob_status>
+		<object type = 'status'>
+			<value>0</value>
+		</object>
+	</subjob_status>
+	<path_map>
+		<object type = 'pathmap'>
+			<logical_map>
+				<object type = 'string_hash'>
+				</object>
+			</logical_map>
+			<direct_map>
+				<object type = 'string_hash'>
+				</object>
+			</direct_map>
+		</object>
+	</path_map>
+	<retry_subjob>-1</retry_subjob>
+	<retry_work>-1</retry_work>
+	<omit_hosts></omit_hosts>
+	<omit_groups></omit_groups>
+	<dependency></dependency>
+	<deadline>
+		<object type = 'time'>
+			<value>0</value>
+		</object>
+	</deadline>
+	<mail_address></mail_address>
+	<notes></notes>
+	<prototype_path></prototype_path>
+	<source_host>
+		<object type = 'address'>
+			<value>0</value>
+		</object>
+	</source_host>
+	<immediate_cpus>0</immediate_cpus>
+	<mask_status>
+		<object type = 'status'>
+			<value>0</value>
+		</object>
+	</mask_status>
+	<eta>
+		<object type = 'time'>
+			<value>0</value>
+		</object>
+	</eta>
+	<range></range>
+	<agenda_timeout>-1</agenda_timeout>
+	<auto_migrate_count>0</auto_migrate_count>
+	<retrywork_delay>0</retrywork_delay>
+	<p_agenda>
+		<object type = 'work_list'>
+		</object>
+	</p_agenda>
+	<p_agenda_priority>-1</p_agenda_priority>
+	<p_agenda_cpus>-1</p_agenda_cpus>
+</object>
